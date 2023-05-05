@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <h1>Dish Type</h1>
+  {% if driver_list %}
+    <ul>
+      {% for dish in dishtype_list %}
+        <li>
+          <a>{{ dish.name }}</a>
+        </li>
+        <br>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>There are no dish</p>
+  {% endif %}
+</body>
+</html>
